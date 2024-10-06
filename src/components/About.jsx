@@ -22,7 +22,7 @@ function About() {
       </h1>
       <div className="flex flex-col sm:flex-row w-full border-t-[1px] text-[#212121] pb-8 md:pb-10 pt-10  px-8 md:px-8 xl:px-32 border-zinc-600">
         <div className="w-1/2">
-          <h1 className="text-[29px] md:text-[40px] text-white ">
+          <h1 className="text-[28px] md:text-[40px] text-white ">
             Our approach:
           </h1>
           <LaunchButton
