@@ -45,7 +45,11 @@ function Navbar() {
         }`}
       >
         <div className="logo">
-          <NavLink to="/" className="text-4xl font-semibold" onClick={() => handleReload("/")}>
+          <NavLink
+            to="/"
+            className="text-4xl "
+            onClick={() => handleReload("/")}
+          >
             Orbit
           </NavLink>
         </div>
@@ -79,7 +83,7 @@ function Navbar() {
             <a
               href="https://github.com/Shoaib-Imrann/Orbit"
               target="_blank"
-              className="uppercase  text-sm font-semibold tracking-wide"
+              className="uppercase font-sans text-sm font-semibold tracking-wide"
             >
               Repo
             </a>
