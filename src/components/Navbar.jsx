@@ -77,7 +77,7 @@ function Navbar() {
           >
             <FaGithub />
             <a
-              href=""
+              href="https://github.com/Shoaib-Imrann/Orbit"
               target="_blank"
               className="uppercase  text-sm font-semibold tracking-wide"
             >
