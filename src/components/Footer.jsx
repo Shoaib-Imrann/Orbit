@@ -13,7 +13,7 @@ function Footer() {
         data-scroll
         data-scroll-speed=".9"
       >
-        <div className=" w-full flex flex-col justify-center items-center md:flex-row h-fit md:justify-between px-5 md:px-10 md:mt-20 lg:px-14 pt-2 md:py-5 lg:pt-16 ">
+        <div className=" w-full flex flex-col justify-center items-center md:flex-row h-fit md:justify-between px-5 md:px-10 md:mt-20 lg:px-14 pt-14 md:py-5 lg:pt-16 ">
           <div className="heading">
             <h1 className='font-["Founders_Grotesk_X-Condensed"] text-[72px] lg:text-[9vw] uppercase leading-none text-[#212121] font-semibold'>
               Impactful
@@ -24,7 +24,7 @@ function Footer() {
           </h1>
         </div>
         <div className="w-full md:px-10 lg:px-14 flex flex-col gap-10 items-center md:items-end md:flex-row md:justify-between md:mb-28 lg:mb-20 h-fit pt-5 xl:pt-0 xl:mb-28">
-          <a href="#" className="text-4xl flex items-end font-semibold">
+          <a href="#" className="text-4xl flex items-end">
             Orbit
           </a>
           <div className="h-fit flex items-center gap-5 md:justify-center md:w-1/2 lg:w-1/2 flex-col md:items-start lg:items-start">
