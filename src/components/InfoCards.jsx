@@ -7,7 +7,7 @@ function InfoCards(props) {
       <div
         className={`${props.visibility} w-full px-5 xl:px-14 border-b-[1px] border-zinc-400 pb-4 xl:pb-8 mt-20 `}
       >
-        <h1 className='text-[31px] md:text-[40px] xl:text-[61px] font-["Mate"] font-semibold'>
+        <h1 className="text-[31px] md:text-[40px] xl:text-[61px] font-sans">
           Reviews
         </h1>
       </div>
