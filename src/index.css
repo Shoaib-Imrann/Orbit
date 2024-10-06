@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Mate";
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+@font-face {
+  font-family: "Founders Grotesk X-Condensed";
+  src: url("/src/assets/fonts/FoundersGroteskXCond-Lt.woff2") format("woff2"),
+    url("/src/assets/fonts/FoundersGroteskXCond-Lt.woff") format("woff"),
+    url("/src/assets/fonts/FoundersGroteskXCond-Lt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mate";
+  src: url("/src/assets/fonts/Mate-Regular.woff2") format("woff2"),
+    url("/src/assets/fonts/Mate-Regular.woff") format("woff"),
+    url("/src/assets/fonts/Mate-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk X-Condensed";
+  src: url("/src/assets/fonts/FoundersGroteskXCond-Bold.woff2") format("woff2"),
+    url("/src/assets/fonts/FoundersGroteskXCond-Bold.woff") format("woff"),
+    url("/src/assets/fonts/FoundersGroteskXCond-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.animate__fadeIn {
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #212121;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #212121;
+  transition: width 0.5s ease;
+}
+
+.hover-underline-animation:hover::after {
+  width: 100%;
+}
+
+/* .transition-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); 
+  transform: translateY(-100%); 
+  transition: transform 0s; 
+  z-index: 9999; 
+}
+
+.transition-overlay.slide-down {
+  transform: translateY(0); 
+  transition: transform 1s ease; 
+} */
