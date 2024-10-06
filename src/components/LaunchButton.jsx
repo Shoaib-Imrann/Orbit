@@ -10,7 +10,7 @@ function LaunchButton(props) {
     <div>
       <motion.button
         onClick={handleClick}
-        className="flex gap-3 items-center text-[14px] md:text-[16px] pl-3 md:pl-5 pr-2 xl:pr-3 py-2 xl:py-3 bg-[#fafafa] mt-6  lg:mt-8 rounded-full text-[#212121] uppercase shadow-lg"
+        className="flex gap-3 items-center text-[14px] md:text-[16px] pl-4 md:pl-5 pr-3 xl:pr-3 py-3 xl:py-3 bg-[#fafafa] mt-6  lg:mt-8 rounded-full text-[#212121] uppercase shadow-lg"
         initial="rest"
         whileHover="hover"
         variants={{
@@ -28,7 +28,7 @@ function LaunchButton(props) {
       >
         {props.data}
         <motion.div
-          className={`w-6 lg:w-9 h-6 lg:h-9 border-[1px] flex items-center justify-center rounded-full  ${props.brColor}`}
+          className={`w-8 lg:w-9 h-8 lg:h-9 border-[1px] flex items-center justify-center rounded-full  ${props.brColor}`}
           variants={{
             rest: {
               scale: 1,
