@@ -8,7 +8,7 @@ import Marquee from "../components/Marquee";
 function Work() {
   return (
     <div className="w-full h-screen bg-[#f1f1f1]">
-      <div className="flex flex-col w-full h-[64vh] sm:h-[68vh] bg-[#54b0a4] pt-32 sm:pt-40">
+      <div className="flex flex-col w-full h-[61vh] sm:h-[68vh] bg-[#54b0a4] pt-32 sm:pt-40">
         <div>
           <h1 className='worktext uppercase text-[120px] sm:text-[152px] px-5 flex justify-center sm:justify-start items-center w-full sm:px-[70px] font-["Founders_Grotesk_X-Condensed"] font-semibold'>
             Work
