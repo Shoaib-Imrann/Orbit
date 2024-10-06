@@ -11,7 +11,7 @@ function NavMenu({ handleMenuToggle }) {
         <div className="logo">
           <NavLink
             to="/"
-            className="text-4xl text-white font-semibold"
+            className="text-4xl text-white"
             onClick={handleMenuToggle}
           >
             Orbit
@@ -21,14 +21,14 @@ function NavMenu({ handleMenuToggle }) {
           <FaXmark size={"1.3em"} color="white" />
         </button>
       </div>
-      <div className="border-t-[1px] mt-20 border-zinc-600"></div>
+      <div className="border-t-[1px] mt-8 border-zinc-600"></div>
       <div className="mt-12 flex flex-col gap-8">
         <NavLink
           to="/about"
           onClick={handleMenuToggle}
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 " : ""
+              isActive ? "underline underline-offset-8 text-[#CDEA67]" : ""
             } `
           }
         >
@@ -38,7 +38,7 @@ function NavMenu({ handleMenuToggle }) {
           to="/services"
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 " : ""
+              isActive ? "underline underline-offset-8 text-[#CDEA67]" : ""
             } `
           }
           onClick={handleMenuToggle}
@@ -49,7 +49,7 @@ function NavMenu({ handleMenuToggle }) {
           to="/work"
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 " : ""
+              isActive ? "underline underline-offset-8 text-[#CDEA67]" : ""
             } `
           }
           onClick={handleMenuToggle}
@@ -60,7 +60,7 @@ function NavMenu({ handleMenuToggle }) {
           to="/insights"
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 " : ""
+              isActive ? "underline underline-offset-8 text-[#CDEA67]" : ""
             } `
           }
           onClick={handleMenuToggle}
@@ -71,7 +71,7 @@ function NavMenu({ handleMenuToggle }) {
           to="/contact"
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 " : ""
+              isActive ? "underline underline-offset-8 text-[#CDEA67]" : ""
             } `
           }
           onClick={handleMenuToggle}
@@ -79,7 +79,7 @@ function NavMenu({ handleMenuToggle }) {
           Contact Us
         </NavLink>
         <div className="px-3">
-        <motion.div
+          <motion.div
             className="flex justify-center w-fit items-center gap-3 border-[1px] px-3 py-3 rounded-md border-[#212121] bg-transparent "
             initial="rest"
             whileHover="hover"
@@ -100,16 +100,16 @@ function NavMenu({ handleMenuToggle }) {
               ease: [0.85, 0, 0.15, 1],
             }}
           >
-            <FaGithub size={"1.2em"}/>
+            <FaGithub size={"1.2em"} />
             <a
-              href=""
+              href="https://github.com/Shoaib-Imrann/Orbit"
               target="_blank"
-              className="uppercase text-lg font-semibold tracking-wide"
+              className="uppercase text-lg font-sans font-semibold tracking-wide"
             >
               Repo
             </a>
           </motion.div>
-          </div>
+        </div>
       </div>
     </div>
   );
