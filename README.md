@@ -1,6 +1,6 @@
-A web application built with React, Tailwind CSS, and Locomotive Scroll
+A web built with React, Tailwind CSS, and Locomotive Scroll
 
-visit the site - (https://orbitweb.netlify.app)
+visit the site - https://orbitweb.netlify.app
 
 ## Installation
 
