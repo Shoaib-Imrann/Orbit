@@ -13,14 +13,14 @@ function Featured(props) {
   return (
     <div className="w-full min-h-screen py-6 xl:py-20 bg-[#f1f1f1] rounded-t-3xl">
       <h1
-        className={`sm:pt-10 pb-10 text-[30px] font-sans md:text-50px] xl:${props.textsize} px-5 xl:px-14 w-full leading-[40px] md:leading-[65px]  `}
+        className={`sm:pt-10 pb-2 text-[25px] font-sans md:text-[50px] xl:${props.textsize} px-8 xl:px-14 w-full leading-[40px] md:leading-[65px]  `}
       >
         {props.text}
       </h1>
       <div
-        className={`${props.visibility} w-full  border-b-[1px] border-zinc-400 pb-2`}
+        className={`${props.visibility} w-full  border-b-[1px] border-zinc-400`}
       ></div>
-      <div className="px-5 xl:px-2 py-5 xl:py-20 ">
+      <div className="px-8 xl:px-2 py-5 xl:py-20 ">
         <div className="first flex flex-col gap-10 md:gap-20 xl:gap-20">
           <div className="cards w-full flex flex-col sm:flex-row sm:justify-evenly md:flex-row md:justify-evenly gap-5 ">
             <div className="overall">
