@@ -13,9 +13,9 @@ function Navbar() {
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
+      if (window.scrollY > lastScrollY && window.scrollY > 60) {
         setIsVisible(false);
-      } else {
+      } else if (window.scrollY < lastScrollY || window.scrollY <= 60) {
         setIsVisible(true);
       }
       setLastScrollY(window.scrollY);
