@@ -24,7 +24,7 @@ function Cta() {
           <div className=" z-50">
             <LaunchButton
               goto={"/contact"}
-              data={"start the project"}
+              data={"TAKE ME!"}
               color1={"#fafafa"}
               color2={"#212121"}
               iconclr2={"#212121"}
