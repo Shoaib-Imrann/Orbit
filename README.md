@@ -1,4 +1,4 @@
-A web built with React, Tailwind CSS, and Locomotive Scroll
+A web design built with React, Tailwind CSS, and Locomotive Scroll
 
 visit the site - https://orbitweb.netlify.app
 
