@@ -28,7 +28,7 @@ function NavMenu({ handleMenuToggle }) {
           onClick={handleMenuToggle}
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 text-[#CDEA67]" : ""
+              isActive ? "underline underline-offset-8 text-[#A0F040] " : ""
             } `
           }
         >
@@ -38,7 +38,7 @@ function NavMenu({ handleMenuToggle }) {
           to="/services"
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 text-[#CDEA67]" : ""
+              isActive ? "underline underline-offset-8 text-[#A0F040] " : ""
             } `
           }
           onClick={handleMenuToggle}
@@ -49,7 +49,7 @@ function NavMenu({ handleMenuToggle }) {
           to="/work"
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 text-[#CDEA67]" : ""
+              isActive ? "underline underline-offset-8 text-[#A0F040] " : ""
             } `
           }
           onClick={handleMenuToggle}
@@ -60,7 +60,7 @@ function NavMenu({ handleMenuToggle }) {
           to="/insights"
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 text-[#CDEA67]" : ""
+              isActive ? "underline underline-offset-8 text-[#A0F040] " : ""
             } `
           }
           onClick={handleMenuToggle}
@@ -71,7 +71,7 @@ function NavMenu({ handleMenuToggle }) {
           to="/contact"
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 text-[#CDEA67]" : ""
+              isActive ? "underline underline-offset-8 text-[#A0F040] " : ""
             } `
           }
           onClick={handleMenuToggle}
