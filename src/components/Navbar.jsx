@@ -59,7 +59,7 @@ function Navbar() {
         {isMenuOpen && <NavMenu handleMenuToggle={handleMenuToggle} />}
         <div className="hidden md:flex justify-center items-center gap-10  cursor-pointer ">
           <motion.div
-            className="flex justify-center items-center gap-2 border-[1px] px-3 py-[10px] rounded-md border-[#212121] bg-transparent shadow-lg"
+            className="flex justify-center items-center gap-2 border-[1px] px-3 py-[9px] rounded-md border-[#212121] bg-transparent"
             initial="rest"
             whileHover="hover"
             animate="rest"
