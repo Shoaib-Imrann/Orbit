@@ -1,6 +1,6 @@
 A Web Design built with `React` `Tailwind CSS` and `Locomotive Scroll`
 
-Visit the Live Site - https://orbitweb.netlify.app
+
 
 ## Installation
 
