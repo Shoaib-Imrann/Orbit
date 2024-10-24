@@ -1,6 +1,6 @@
-A web design built with React, Tailwind CSS, and Locomotive Scroll
+A Web Design built with `React` `Tailwind CSS` and `Locomotive Scroll`
 
-visit the site - https://orbitweb.netlify.app
+Visit the Live Site - https://orbitweb.netlify.app
 
 ## Installation
 
@@ -22,7 +22,7 @@ visit the site - https://orbitweb.netlify.app
     npm run dev
     ```
 
-    Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
+    Open `http://localhost:3000` to view the application in your browser.
 
 
 
