@@ -8,6 +8,7 @@ A Web Design built with `React` `Tailwind CSS` and `Locomotive Scroll`
 
     ```bash
     git clone https://github.com/Shoaib-Imrann/Orbit.git
+    cd orbit
     ```
 
 2. **Install Dependencies:**
