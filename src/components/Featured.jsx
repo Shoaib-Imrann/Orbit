@@ -13,7 +13,7 @@ function Featured(props) {
   return (
     <div className="w-full min-h-screen py-6 xl:py-20 bg-[#f1f1f1] rounded-t-3xl">
       <h1
-        className={`sm:pt-10 pb-2 text-[25px] font-sans md:text-[50px] xl:${props.textsize} px-8 xl:px-14 w-full leading-[40px] md:leading-[65px]  `}
+        className={`sm:pt-10 pb-2 text-[25px] outfit-font md:text-[50px] xl:${props.textsize} px-8 xl:px-14 w-full leading-[40px] md:leading-[65px]  `}
       >
         {props.text}
       </h1>

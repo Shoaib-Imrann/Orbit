@@ -54,7 +54,7 @@ function Services() {
           </div>
         </div>
         <Marquee text={"why only us"} />
-        <div className="w-full h-full lg:h-[115vh] bg-[#212121]  pb-20 pt-10 lg:pt-32 lg:-mt-24 rounded-b-2xl">
+        <div className="w-full h-full lg:h-[115vh] bg-[#212121]  pb-20 pt-10 lg:pt-32 lg:-mt-24 sm:rounded-b-2xl">
           <div className="text flex flex-col md:flex-row gap-5 w-full justify-between mt-5 lg:pl-[70px] px-5 lg:px-10 lg:pr-10  mb-20">
             <div className="text1">
               <p className="text-2xl text-white">What you can expect:</p>

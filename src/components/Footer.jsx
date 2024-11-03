@@ -9,7 +9,7 @@ function Footer() {
   return (
     <>
       <div
-        className="flex justify-evenly md:justify-between flex-col gap-5 w-full h-screen rounded-t-3xl bg-white"
+        className="flex justify-evenly md:justify-between flex-col gap-5 w-full h-screen sm:rounded-t-3xl bg-white"
         data-scroll
         data-scroll-speed=".9"
       >

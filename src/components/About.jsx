@@ -5,7 +5,7 @@ import LaunchButton from "./LaunchButton";
 
 function About() {
   return (
-    <div className=" w-screen flex flex-col justify-evenly sm:justify-center h-[110vh] sm:h-[80vh] lg:-mt-24 lg:h-[115vh] md:pt-5 bg-[#212121] rounded-b-2xl">
+    <div className=" w-screen flex flex-col justify-evenly sm:justify-center h-[110vh] sm:h-[80vh] lg:-mt-24 lg:h-[115vh] md:pt-5 bg-[#212121] sm:rounded-b-2xl">
       <h1 className="text-[28px] sm:text-[30px] xl:text-[40px] xl:leading-[55px] text-white w-full sm:w-[80vw] px-5 xl:px-32 pb-7 xl:pb-20 xl:pt-36 ">
         Orbit is a presentation agency that empowers
         <span className="border-b-2 border-white">

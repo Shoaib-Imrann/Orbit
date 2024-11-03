@@ -26,7 +26,7 @@ export default function ContactForm() {
 
   return (
     <div>
-      <div className="bg-white/70 min-h-screen flex items-center justify-center pt-24 rounded-b-3xl ">
+      <div className="bg-white/70 min-h-screen flex items-center justify-center py-24 sm:rounded-b-3xl z-10">
         <div className="bg-white shadow-md rounded-lg py-6 px-8 mx-5 max-w-4xl w-[900px] h-auto">
           <h1 className="text-2xl font-sans text-[#212121] mb-12 w-full">
             Let’s Work Together!
@@ -232,10 +232,10 @@ export default function ContactForm() {
           </form>
         </div>
       </div>
-      <div data-scroll data-scroll-speed="-.1" className="h-[60vh] relative ">
+      <div data-scroll data-scroll-speed="-.1" className="h-[60vh] relative">
         <Eyeballs />
       </div>
-      <div data-scroll data-scroll-speed="-.9" className="-mt-20">
+      <div data-scroll data-scroll-speed="-.1" className="-mt-20">
         <Footer />
       </div>
     </div>

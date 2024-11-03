@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sentry/react": "^8.36.0",
+    "@sentry/tracing": "^7.114.0",
+    "@sentry/vite-plugin": "^2.22.6",
     "animate.css": "^4.1.1",
+    "dotenv": "^16.4.5",
     "framer-motion": "^11.9.0",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^5.0.0-beta.21",
