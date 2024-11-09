@@ -32,12 +32,3 @@ root.render(
     </BrowserRouter>
   </StrictMode>
 );
-
-
-
-// If you want to use Sentry for this project, please follow these steps:
-//  1. Create a .env file in the root directory of the project.
-//  2. Inside the .env file, include the following keys:
-//     SENTRY_AUTH_TOKEN="given_by_sentry_after_setup"
-//     VITE_SENTRY_ORG="your_org_name_here"
-//     VITE_SENTRY_DSN="your_dsn_here"
