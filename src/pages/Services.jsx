@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import Marquee from "../components/Marquee";
 import NumberCards from "../components/NumberCards";
+import transition from "../transition";
 
 function Services() {
   return (
@@ -107,4 +108,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default transition(Services);

@@ -15,7 +15,7 @@ function LandingPage() {
     >
       <div className="landingtext pt-52 px-[30px] lg:px-[70px]">
         {["We Design", "Impactful", "presentations"].map((item, index) => (
-          <div className="masker bg-gray-200 rounded-md">
+          <div key={index} className="masker bg-gray-200 rounded-md">
             <div className="w-fit flex items-center">
               {index === 1 && (
                 <motion.div
@@ -41,7 +41,7 @@ function LandingPage() {
       </div>
       <div className="border-t-[1px] border-zinc-400 mt-[205px] md:mt-[190px] xl:mt-[220px] flex flex-col sm:flex-row gap-8 justify-between items-start sm:items-center py-5 px-[30px] lg:px-[70px]">
         {["For businesses and organizations"].map((item, index) => (
-          <p className="text-[#212121] font-['Mate'] text-lg font-light leading-[1.6vw]">
+          <p key={index} className="text-[#212121] font-['Mate'] text-lg font-light leading-[1.6vw]">
             {item}
           </p>
         ))}

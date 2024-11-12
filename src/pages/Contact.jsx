@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Eyeballs from "../components/Eyeballs";
 import Footer from "../components/Footer";
+import transition from "../transition";
 
-export default function ContactForm() {
+function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -240,3 +241,6 @@ export default function ContactForm() {
     </div>
   );
 }
+
+
+export default transition(ContactForm);

@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import InfoCards from "../components/InfoCards";
 import LaunchButton from "../components/LaunchButton";
 import Marquee from "../components/Marquee";
+import transition from "../transition";
 
 function About() {
   return (
@@ -119,4 +120,4 @@ function About() {
   );
 }
 
-export default About;
+export default transition(About);

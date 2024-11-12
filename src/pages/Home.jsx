@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import InfoCards from "../components/InfoCards";
 import LandingPage from "../components/LandingPage";
 import Marquee from "../components/Marquee";
+import transition from "../transition";
 
 function Home() {
   return (
@@ -25,4 +26,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default transition(Home);

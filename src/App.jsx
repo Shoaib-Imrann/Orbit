@@ -1,6 +1,6 @@
 import LocomotiveScroll from "locomotive-scroll";
 import React, { useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About";
@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Insights from "./pages/Insights";
 import Services from "./pages/Services";
 import Work from "./pages/Work";
+import {AnimatePresence, motion} from 'framer-motion';
 
 function App() {
   const [scrollInstance, setScrollInstance] = useState(null);
@@ -41,11 +42,14 @@ function App() {
     };
   }, [scrollInstance]);
 
+  const location = useLocation();
+
   return (
     <div data-scroll-container className="w-full min-h-screen bg-[#F1F1F1]">
       <Navbar />
+      <AnimatePresence mode="wait">
       <ScrollToTop/>
-      <Routes>
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
@@ -53,6 +57,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/work" element={<Work />} />
       </Routes>
+      </AnimatePresence>
     </div>
   );
 }

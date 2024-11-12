@@ -4,6 +4,7 @@ import Eyeballs from "../components/Eyeballs";
 import Featured from "../components/Featured";
 import Footer from "../components/Footer";
 import Marquee from "../components/Marquee";
+import transition from "../transition";
 
 function Work() {
   return (
@@ -41,6 +42,6 @@ function Work() {
   );
 }
 
-export default Work;
+export default transition(Work);
 
 

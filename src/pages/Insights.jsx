@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import InsightsCard from "../components/InsightsCard";
 import Marquee from "../components/Marquee";
 import ProjectButton from "../components/ProjectButton";
+import transition from "../transition";
 
 function Insights() {
   return (
@@ -81,4 +82,4 @@ function Insights() {
   );
 }
 
-export default Insights;
+export default transition(Insights) ;
