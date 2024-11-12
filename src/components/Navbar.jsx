@@ -30,7 +30,7 @@ function Navbar() {
   }, [lastScrollY]);
 
   const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle the menu visibility
+    setIsMenuOpen(!isMenuOpen);
   };
 
   const handleReload = (url) => {
@@ -58,36 +58,6 @@ function Navbar() {
         </button>
         {isMenuOpen && <NavMenu handleMenuToggle={handleMenuToggle} />}
         <div className="hidden md:flex justify-center items-center gap-10  cursor-pointer ">
-          <motion.div
-            className="flex justify-center items-center gap-2 border-[1px] px-3 py-[9px] rounded-md border-[#212121] bg-transparent"
-            initial="rest"
-            whileHover="hover"
-            animate="rest"
-            variants={{
-              rest: {
-                scale: 1,
-                backgroundColor: "transparent",
-              },
-              hover: {
-                scale: 1.05,
-                backgroundColor: "#212121",
-                color: "white",
-              },
-            }}
-            transition={{
-              duration: 0.1,
-              ease: [0.85, 0, 0.15, 1],
-            }}
-          >
-            <FaGithub />
-            <a
-              href="https://github.com/Shoaib-Imrann/Orbit"
-              target="_blank"
-              className="uppercase font-sans text-sm font-semibold tracking-wide"
-            >
-              Repo
-            </a>
-          </motion.div>
           <NavLink
             to="/about"
             onClick={() => handleReload("/about")}
@@ -132,6 +102,35 @@ function Navbar() {
           >
             Insights
           </NavLink>
+          <motion.div
+            className="flex justify-center items-center border-[1px] px-2 py-2 rounded-lg border-[#212121] bg-transparent"
+            initial="rest"
+            whileHover="hover"
+            animate="rest"
+            variants={{
+              rest: {
+                scale: 1,
+                backgroundColor: "transparent",
+              },
+              hover: {
+                scale: 1.05,
+                backgroundColor: "#212121",
+                color: "white",
+              },
+            }}
+            transition={{
+              duration: 0.1,
+              ease: [0.85, 0, 0.15, 1],
+            }}
+          >
+            <FaGithub />
+            <a
+              href="https://github.com/Shoaib-Imrann/Orbit"
+              target="_blank"
+              className="uppercase font-sans text-sm font-semibold tracking-wide"
+            >
+            </a>
+          </motion.div>
           <NavLink
             to="/contact"
             onClick={() => handleReload("/contact")}

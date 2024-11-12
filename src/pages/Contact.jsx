@@ -20,15 +20,16 @@ export default function ContactForm() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     console.log("Form data submitted:", formData);
+    alert("Demo");
   };
 
   return (
     <div>
       <div className="bg-white/70 min-h-screen flex items-center justify-center py-24 sm:rounded-b-3xl z-10">
         <div className="bg-white shadow-md rounded-lg py-6 px-8 mx-5 max-w-4xl w-[900px] h-auto">
-          <h1 className="text-2xl font-sans text-[#212121] mb-12 w-full">
+          <h1 className="text-2xl font-sans text-[#212121] mb-16 w-full text-center">
             Let’s Work Together!
           </h1>
 
@@ -235,9 +236,7 @@ export default function ContactForm() {
       <div data-scroll data-scroll-speed="-.1" className="h-[60vh] relative">
         <Eyeballs />
       </div>
-      <div data-scroll data-scroll-speed="-.1" className="-mt-20">
         <Footer />
-      </div>
     </div>
   );
 }
