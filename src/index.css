@@ -72,6 +72,12 @@ body {
   width: 100%;
 }
 
+.underline-custom {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  color: #A0F040;
+}
+
 /* .transition-overlay {
   position: fixed;
   top: 0;

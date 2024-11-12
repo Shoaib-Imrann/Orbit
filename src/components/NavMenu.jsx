@@ -28,7 +28,7 @@ function NavMenu({ handleMenuToggle }) {
           onClick={handleMenuToggle}
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 text-[#A0F040] " : ""
+              isActive ? "underline-custom" : ""
             } `
           }
         >
@@ -38,7 +38,7 @@ function NavMenu({ handleMenuToggle }) {
           to="/services"
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 text-[#A0F040] " : ""
+              isActive ? "underline-custom" : ""
             } `
           }
           onClick={handleMenuToggle}
@@ -49,7 +49,7 @@ function NavMenu({ handleMenuToggle }) {
           to="/work"
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 text-[#A0F040] " : ""
+              isActive ? "underline-custom" : ""
             } `
           }
           onClick={handleMenuToggle}
@@ -60,7 +60,7 @@ function NavMenu({ handleMenuToggle }) {
           to="/insights"
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 text-[#A0F040] " : ""
+              isActive ? "underline-custom" : ""
             } `
           }
           onClick={handleMenuToggle}
@@ -71,7 +71,7 @@ function NavMenu({ handleMenuToggle }) {
           to="/contact"
           className={({ isActive }) =>
             `text-white text-6xl uppercase font-['Founders_Grotesk_X-Condensed'] font-semibold rounded-lg hover:bg-black/15 px-3 ${
-              isActive ? "underline underline-offset-8 text-[#A0F040] " : ""
+              isActive ? "underline-custom" : ""
             } `
           }
           onClick={handleMenuToggle}
@@ -79,36 +79,16 @@ function NavMenu({ handleMenuToggle }) {
           Contact Us
         </NavLink>
         <div className="px-3">
-          <motion.div
-            className="flex justify-center w-fit items-center gap-3 border-[1px] px-3 py-3 rounded-md border-[#212121] bg-transparent "
-            initial="rest"
-            whileHover="hover"
-            animate="rest"
-            variants={{
-              rest: {
-                scale: 1,
-                backgroundColor: "#f1f1f1",
-              },
-              hover: {
-                scale: 1.05,
-                backgroundColor: "white",
-                color: "#212121",
-              },
-            }}
-            transition={{
-              duration: 0.1,
-              ease: [0.85, 0, 0.15, 1],
-            }}
-          >
-            <FaGithub size={"1.2em"} />
+          <div className="flex justify-center w-fit items-center gap-3 px-4 py-3 rounded-lg bg-white">
             <a
               href="https://github.com/Shoaib-Imrann/Orbit"
               target="_blank"
-              className="uppercase text-lg font-sans font-semibold tracking-wide"
+              className="text-lg font-semibold font-helvetica"
             >
-              Repo
+              Repository
             </a>
-          </motion.div>
+            <FaGithub size={"1.3em"} />
+          </div>
         </div>
       </div>
     </div>
