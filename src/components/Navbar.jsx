@@ -123,12 +123,13 @@ function Navbar() {
               ease: [0.85, 0, 0.15, 1],
             }}
           >
-            <FaGithub />
+            
             <a
               href="https://github.com/Shoaib-Imrann/Orbit"
               target="_blank"
-              className="uppercase font-sans text-sm font-semibold tracking-wide"
+              className=""
             >
+              <FaGithub />
             </a>
           </motion.div>
           <NavLink
