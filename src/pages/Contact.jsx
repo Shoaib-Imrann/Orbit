@@ -28,14 +28,14 @@ function ContactForm() {
 
   return (
     <div>
-      <div className="bg-white/70 min-h-screen flex items-center justify-center py-24 sm:rounded-b-3xl z-10">
-        <div className="bg-white shadow-md rounded-lg py-6 px-8 mx-5 max-w-4xl w-[900px] h-auto">
+      <div className=" min-h-screen flex items-center justify-center py-24 sm:rounded-b-3xl z-10">
+        <div className="  rounded-lg py-6 px-8 mx-5 max-w-4xl w-[900px] h-auto">
           <h1 className="text-2xl font-sans text-[#212121] mb-16 w-full text-center">
             Let’s Work Together!
           </h1>
 
           <form onSubmit={handleSubmit} className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Name */}
               <div>
                 <label
@@ -49,7 +49,7 @@ function ContactForm() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="mt-1 block w-full p-[15px] rounded-md border-gray-400 bg-[#f3f4f6]/40 shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
+                  className="mt-1 block w-full p-[15px] rounded-md border-gray-400 bg-white/80 shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
                   placeholder="Enter your name"
                   required
                 />
@@ -68,14 +68,14 @@ function ContactForm() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-400 bg-[#f3f4f6]/40 p-[15px] shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
+                  className="mt-1 block w-full rounded-md border-gray-400 bg-white/80 p-[15px] shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
                   placeholder="Your company name"
                   required
                 />
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Goal */}
               <div>
                 <label
@@ -89,7 +89,7 @@ function ContactForm() {
                   name="goal"
                   value={formData.goal}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-400 bg-[#f3f4f6]/40 p-[15px] shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
+                  className="mt-1 block w-full rounded-md border-gray-400 bg-white/80 p-[15px] shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
                   placeholder="What's your goal?"
                   required
                 />
@@ -108,13 +108,13 @@ function ContactForm() {
                   name="date"
                   value={formData.date}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-400 bg-[#f3f4f6]/40 p-[15px] shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
+                  className="mt-1 block w-full rounded-md border-gray-400 bg-white/80 p-[15px] shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
                   required
                 />
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Budget */}
               <div>
                 <label
@@ -127,7 +127,7 @@ function ContactForm() {
                   name="budget"
                   value={formData.budget}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-400 bg-[#f3f4f6]/40 p-[15px] shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
+                  className="mt-1 block w-full rounded-md border-gray-400 bg-white/80 p-[15px] shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
                   required
                 >
                   <option value="">Select a budget range</option>
@@ -150,7 +150,7 @@ function ContactForm() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-400 bg-[#f3f4f6]/40 p-[15px] shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
+                  className="mt-1 block w-full rounded-md border-gray-400 bg-white/80 p-[15px] shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
                   placeholder="name@example.com"
                   required
                 />
@@ -170,7 +170,7 @@ function ContactForm() {
                 value={formData.details}
                 onChange={handleChange}
                 rows="4"
-                className="mt-1 block w-full rounded-md border-gray-400 bg-[#f3f4f6]/40 p-[15px] shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
+                className="mt-1 block w-full rounded-md border-gray-400 bg-white/80 p-[15px] shadow-sm focus:border-[#212121] focus:ring-[#212121] text-md"
                 placeholder="Tell us more about your project..."
               />
             </div>

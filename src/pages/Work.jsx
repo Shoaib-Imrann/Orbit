@@ -18,7 +18,7 @@ function Work() {
             <Eyeballs />
           </div>
         </div>
-        <div className="flex flex-col  h-full justify-end items-center z-50">
+        <div className="flex flex-col  h-full justify-end items-center z-40">
           <div className="w-[80%] h-[33px] sm:h-[48px] bg-[#343434] rounded-t-xl"></div>
           <div className="w-[95%] h-[38px] sm:h-[48px] bg-[#282828] rounded-t-xl"></div>
         </div>

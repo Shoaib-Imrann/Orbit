@@ -24,6 +24,25 @@ Sentry.init({
 });
 }
 
+
+const GA_ID = import.meta.env.VITE_GA_ID;
+
+// Google tag (gtag.js)
+if (GA_ID) {
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+  document.head.appendChild(script);
+
+  script.onload = () => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', GA_ID);
+  };
+}
+
+
 const root = createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
