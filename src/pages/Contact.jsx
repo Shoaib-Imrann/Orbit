@@ -131,9 +131,9 @@ function ContactForm() {
                   required
                 >
                   <option value="">Select a budget range</option>
-                  <option value="0-500">$3000 - $8000</option>
-                  <option value="500-1000">$8000 - $15000</option>
-                  <option value="1000-5000">$15000 - $20000+</option>
+                  <option value="0-500">₹50,000 - ₹80,000</option>
+                  <option value="500-1000">₹80,000 - ₹1,20,000</option>
+                  <option value="1000-5000">₹1,20,000 - ₹1,80,000+</option>
                 </select>
               </div>
 

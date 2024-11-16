@@ -6,6 +6,10 @@ import { NavLink } from "react-router-dom";
 
 function NavMenu({ handleMenuToggle }) {
   return (
+    <motion.div className="md:hidden fixed inset-0 px-2 py-3 z-[1000] bg-gray-950 h-screen w-screen" initial={{ x: "-100%" }}
+        animate={{ x: 0 }}
+        exit={{ x: "100%" }}
+        transition={{ duration: 0.5, ease: [0.42, 1, 0.42, 1], delay: 0 }}>
     <div className="fixed inset-0 p-6 z-[1000] bg-primary h-[115vh] w-screen">
       <div className=" flex justify-between px-3">
         <div className="logo">
@@ -79,19 +83,20 @@ function NavMenu({ handleMenuToggle }) {
           Contact Us
         </NavLink>
         <div className="px-3">
-          <div className="flex justify-center w-fit items-center gap-3 px-4 py-3 rounded-lg bg-white">
+          <div className="flex justify-center w-fit items-center gap-3 px-4 py-3 rounded-lg bg-gray-950">
             <a
               href="https://github.com/Shoaib-Imrann/Orbit"
               target="_blank"
-              className="text-lg font-semibold font-helvetica"
+              className="text-lg font-semibold text-white "
             >
               Repository
             </a>
-            <FaGithub size={"1.3em"} />
+            <FaGithub size={"1.3em"} color="white" />
           </div>
         </div>
       </div>
     </div>
+    </motion.div>
   );
 }
 
