@@ -4,6 +4,7 @@ import { AiFillFacebook } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
+import { HiMiniArrowUpRight } from "react-icons/hi2";
 
 function Footer() {
   return (
@@ -63,8 +64,11 @@ function Footer() {
               </motion.div>
             </div>
             <div className="flex flex-col md:flex-row items-center sm:justify-between md:items-end w-full h-[50px] text-[#B2B2B2] text-[19px]">
-              <p className="font-['serif']">&copy; Orbit 2024.</p>
               <p className="font-['serif']">Inspired by ochi.design</p>
+              {/* <p className="font-['serif']">&copy; Orbit 2024.</p> */}
+              <div className="mt-5 flex justify-center items-center">
+              <a target="_blank" href="https://www.shoaibimran.com">Website by - <span className="underline text-zinc-900">shoaibimran.com</span></a><HiMiniArrowUpRight className="text-zinc-900 ml-[2px] md:hidden"/>
+            </div>
             </div>
           </div>
         </div>
